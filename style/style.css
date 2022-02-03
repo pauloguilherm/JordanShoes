@@ -1,11 +1,61 @@
 @font-face {
     font-family: "MontSerratBold" ;
-    src: url("./fontes/Montserrat-Bold.ttf");
-    
+    src: url("../fontes/Montserrat-Bold.ttf");
+
+}
+
+@font-face {
     font-family: "MontSerratMedium";
     src: url("./fontes/Montserrat-Medium.ttf");
+}
 
+@font-face {
     font-family: "MontSerratSemiBold";
     src: url("./fontes/Montserrat-SemiBold.ttf");
 }
 
+
+body{
+    background-color: var(--bgSite);
+}
+
+.desconto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--title);
+    color: var(--white);
+}
+
+.title{
+    background-color: var(--white);
+    color: var(--title);
+    font-size: 15px;
+    font-family: "MontSerratBold";
+}
+
+.logo{
+    height: 30vh;
+    width: 100%;
+    background-image: url('../img/wallpaper.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+h2{
+    text-align: center;
+    height: 40px;
+    margin-top: 60px;
+    font-family: "MontSerratMedium" ;
+    font-size: 25px;
+}
+
+p{
+    text-align: center;
+    font-family: "MontSerratMedium";
+}
