@@ -24,9 +24,14 @@
 
                 <h3>A melhor loja de Jordan</h3>
                 
-                <p>O tênis Jordan é fruto de uma velha e forte <br>
-                    parceria entre a Nike e o jogador Michael Jordan.
-                </p>
+                <div id="typed-strings">
+                    <p>
+                        O tênis Jordan é fruto de uma velha e forte <br>
+                        parceria entre a Nike e o jogador Michael Jordan.
+                    </p>
+                </div>
+                    
+                <P id="typed"></P>
                 
             </div>
         </div>
@@ -97,5 +102,14 @@
     </main>
 
     <footer>Todos os direitos reservados</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 30
+        })
+    </script>
 </body>
 </html>
