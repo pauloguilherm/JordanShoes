@@ -27,13 +27,14 @@ body{
     height: 50px;
     background-color: var(--title);
     color: var(--white);
+    letter-spacing: 1px;
 }
 
 .title{
     background-color: var(--white);
     color: var(--title);
     font-size: 15px;
-    font-family: "MontSerratBold";
+    font-family: "MontSerratSemiBold";
 }
 
 .logo{
@@ -45,17 +46,95 @@ body{
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
+    filter: contrast(65%);
+    position: relative;
+    z-index: 1;
 }
 
-h2{
+.container-content-logo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+
+.logo h3{
+    color: var(--white);
+    font-family: "MontSerratBold";
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+    z-index: 2;
+}
+
+.logo p{
+    color: var(--white);
+    margin-top: 20px;
+    margin-right: 37px;
+    font-family:"MontSerratBold";
+    text-shadow: 2px 1px black;
+    font-size: 13px;
+}
+
+content h2{
     text-align: center;
     height: 40px;
-    margin-top: 60px;
-    font-family: "MontSerratMedium" ;
+    margin-top: 80px;
+    font-family: "MontSerratBold" ;
     font-size: 25px;
 }
 
-p{
+content p{
     text-align: center;
     font-family: "MontSerratMedium";
+    font-size: 17px;
+    margin-top: 20px;
+    color: var(--text);
 }
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 300px;
+    height: 200px;
+    background-color: var(--bgCard);
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: var(--title);
+    width: 100%;
+    height: 40px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container-content-logo{
+        width: 100%;
+    }
+    .container-content-logo h3{
+        text-align: center;
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .container-content-logo p{
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+
